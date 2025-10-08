@@ -1,0 +1,27 @@
+/* src/components/Header.css */
+.main-header {
+  background-color: #282c34;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.nav-list {
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0;
+  margin: 0;
+  display: flex; /* Para alinhar os itens horizontalmente */
+  gap: 20px; /* Adiciona espaço entre os links */
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #61dafb; /* Muda a cor ao passar o mouse */
+}
