@@ -1,70 +1,91 @@
-.buscador-container{
-  max-width: 400px;
-  margin: 40px auto;
+/* BuscadorDeCEP.css */
+
+.buscador-container {
+  max-width: 500px;
+  margin: 50px auto;
   padding: 20px;
-  background: #ffffffda;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
-h1{
-    margin-bottom: 20px;
-    color: #333;
+h1 {
+  color: #333;
 }
 
-.input-area{
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
+.input-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
 }
 
-input{
-    padding: 10px;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    width: 150px;
-    text-align: center;
+.cep-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 200px;
 }
 
-button {
+.search-button,
+.clear-button {
   padding: 10px 15px;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
   cursor: pointer;
-  background: #007bff;
   color: white;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background: #0056b3;
-}
-
-button.limpar {
-  background: #dc3545;
-}
-
-button.limpar:hover {
-  background: #a71d2a;
-}
-
-.loading {
-  color: #080707;
-}
-
-.erro {
-  color: red;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
-.resultado {
-  text-align: left;
-  background: #e6f7ff;   /* azul clarinho */
-  padding: 15px;
+.search-button {
+  background-color: #007bff;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.clear-button {
+  background-color: #dc3545;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+}
+
+.status-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.error-message {
+  color: white;
+  background-color: #dc3545;
+}
+
+.endereco-info {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  border: 1px solid #91d5ff;
-  color: #004085;        /* texto azul escuro */
+  background-color: #e9f5ff;
+  text-align: left;
+}
+
+.endereco-info h2 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.endereco-info p {
+  margin: 5px 0;
+}
+
+.endereco-info strong {
+  color: #333;
 }
