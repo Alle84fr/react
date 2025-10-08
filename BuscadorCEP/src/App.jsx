@@ -1,13 +1,13 @@
 // src/App.jsx
 //  App.jsx é o componente "raiz" da aplicação, onde todos os outros componentes são aninhados.
-import React from 'react';
-import './App.css'; // Opcional: para estilização geral do App
+import React from "react";
+import './App.css';
 import BuscadorDeCEP from './components/BuscadorDeCEP';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import UsarParam from './pages/UsarParam';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Header from './components/Header';
-import UsarParam from './pages/UsarParam';
 
 function App() {
   return (
